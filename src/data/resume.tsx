@@ -124,7 +124,7 @@ In my role as a Graduate Research Assistant in the RESHAPE Lab at Northern Arizo
     {
       school: "Nothern Arizona University",
       href: "https://nau.edu/",
-      degree: "Bachelor's Degree in Computer Science and Mathematics (BCS)",
+      degree: "MSc. Computer Science",
       logoUrl: "/nau.png",
       start: "August 2024",
       end: "May 2026",
@@ -136,7 +136,7 @@ In my role as a Graduate Research Assistant in the RESHAPE Lab at Northern Arizo
     {
       school: "Lead City University",
       href: "https://www.lcu.edu.ng/",
-      degree: "BSc Computer Science",
+      degree: "BSc. Computer Science",
       logoUrl: "/lcu.png",
       start: "September 2018",
       end: "July 2022",
@@ -220,6 +220,38 @@ In my role as a Graduate Research Assistant in the RESHAPE Lab at Northern Arizo
         "/trailabout4.png",
         "/trailabout5.png",
       ],
+      policy: ` <h1 class="font-bold text-3xl">TrailAbout Privacy Policy</h1>
+      <p>Effective Date: 23rd of October, 2024</p>
+      <li class="py-2 font-medium">1. Introduction</li>
+      <p>Welcome to TrailAbout! We value your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, store, and use your data when you use TrailAbout.</p>
+      By using TrailAbout, you agree to the terms of this Privacy Policy. If you do not agree, please discontinue using the app.
+      <li class="py-2 font-medium">2. Information We Collect</li>
+      <p>To provide an engaging experience in TrailAbout, we collect the following types of information:</p>
+      <p>User Authentication Data: When you create an account or sign in using third-party providers (such as Google, Apple, or Facebook), we collect basic authentication data, which may include your name, email address, and profile photo. This information is used to create and manage your account within the app.</p>
+      <p>Posts and Content: When you create posts, upload photos, or interact with content within TrailAbout, this data is stored securely on our servers to ensure the app functions as intended.</p>
+      <li class="py-2 font-medium">3. How We Use Your Information</li>
+      <p>Authentication: Your login information is used only to authenticate your account and give you access to the app's features. We do not share your authentication data with third parties.                             </p>
+      <p>User-Generated Content: Your posts, including text and images, are stored so that they are visible to you and other users of TrailAbout. This data helps enhance your experience and the community aspect of the app.</p>
+      <li class="py-2 font-medium">4. Data Sharing and Disclosure</li>
+      <p>No Third-Party Sharing: We do not share, sell, or rent your personal information or posts to any third-party organizations for advertising or marketing purposes.
+      <p>Internal Use Only: The data you provide, such as your account information and posts, is used solely to operate and improve the functionality of TrailAbout.
+      <li class="py-2 font-medium">5. Data Security</li>
+      <p>We take your data security seriously. All user data, including authentication details and posts, are securely stored using industry-standard encryption methods. We regularly review our security practices to ensure your information is safe. </p>
+      <li class="py-2 font-medium">6. Data Retention</li>
+      <p>Authentication Data: We retain your authentication data for as long as your account is active. If you delete your account, this information is permanently removed from our systems.</p>
+      <p>Posts and Content: Posts and other user-generated content remain stored as long as your account is active. If you delete specific posts or your account, the corresponding data will be permanently deleted.</p>
+      <li class="py-2 font-medium">7. Your Rights and Choices</li>
+      <p>Access and Deletion: You have the right to access and update your personal information at any time through the app. If you wish to delete your account, you can do so in the app’s settings, and all your data will be removed permanently.</p>
+      <p>Control Over Content: You can delete individual posts or photos you have shared in the app. Once deleted, the content will no longer be visible to other users or retained by TrailAbout.</p>
+      <li class="py-2 font-medium">8. Children's Privacy</li>
+      <p>TrailAbout is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and become aware that your child has provided us with personal data, please contact us, and we will delete such information from our systems.</p>
+      <li class="py-2 font-medium">9. Changes to This Privacy Policy</li>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify users of any significant updates by posting the new policy on the app and updating the "Effective Date" above.</p>
+      <li class="py-2 font-medium">10. Contact Us</li>
+      <p>If you have any questions or concerns about this Privacy Policy or how your data is handled, please contact us at:</p>
+<p class="pt-2">Email:  <a  class="link" href="mailto:msnetchie11@gmail.com" target="_blank">msnetchie11@gmail.com</a></p>
+<p class="pt-2">Website: <a class="link" href="https://misanetc.vercel.app" target="_blank">misanetc.vercel.app </a></p>
+      <p>By using TrailAbout, you acknowledge that you have read and understood this Privacy Policy and consent to the collection and use of your information as described herein.</p>`,
     },
     {
       title: "Raincheck",
@@ -299,8 +331,8 @@ In my role as a Graduate Research Assistant in the RESHAPE Lab at Northern Arizo
 
 <p>If you have any questions about this Privacy Policy or how Raincheck operates, please feel free to contact us at:</p>
 
-<p>Email: msnetchie11@gmail.com</p>
-<p>Website: misanetc.vercel.app</p>
+<p class="pt-2">Email:  <a  class="link" href="mailto:msnetchie11@gmail.com" target="_blank">msnetchie11@gmail.com</a></p>
+<p class="pt-2">Website: <a class="link" href="https://misanetc.vercel.app" target="_blank">misanetc.vercel.app </a></p>
 <li class="py-2 font-medium">10. Children's Privacy</li>
 
 <p>Raincheck does not knowingly collect personal information from children under the age of 13. Since we do not collect any data, the app is safe for users of all ages.</p>
@@ -339,6 +371,29 @@ In my role as a Graduate Research Assistant in the RESHAPE Lab at Northern Arizo
         "/roadmap4.png",
         "/roadmap5.png",
       ],
+
+      policy: ` 
+      <h1 class="font-bold text-3xl">Privacy Policy for Roadmap</h1>
+<p>Effective Date: 23rd of October, 2024</p>
+<p>Thank you for using Roadmap. Your privacy is important to us. This privacy policy outlines the practices and measures we take to ensure your privacy and security when using the Roadmap app.</p>
+<li class="py-2 font-medium">Data Collection</li>
+<p class="pb-4">Roadmap does not collect, store, or share any personal information or data from its users. This means:</p>
+<p>No Personal Data: We do not request or store any personal information such as names, email addresses, phone numbers, or any other identifying information.</p>
+<p>No Location Data: Roadmap does not access or collect any location data from your device</p>
+
+<p>No Third-Party Tracking: We do not use any third-party services that collect information about your use of the app, nor do we use any analytics or advertising frameworks that track your behavior.</p>
+
+<li class="py-2 font-medium">Local Data</li>
+<p>Any data generated within the app (such as game progress or settings) is stored locally on your device. This data is not shared with or transmitted to any external servers or third parties.</p>
+<li class="py-2 font-medium">Security</li>
+<p>We are committed to ensuring that your data remains private and secure. Since we do not collect or store any data, there is no risk of unauthorized access or data breaches in connection with your use of Roadmap.</p>
+<li class="py-2 font-medium">Changes to This Privacy Policy</li>
+<p>We reserve the right to update this privacy policy as needed to reflect changes in our app or legal requirements. If we make any changes, the updated policy will be made available in the app.</p>
+<p>If you have any questions about this Privacy Policy or how Raincheck operates, please feel free to contact us at:</p>
+
+<p class="pt-2">Email:  <a  class="link" href="mailto:msnetchie11@gmail.com" target="_blank">msnetchie11@gmail.com</a></p>
+<p class="pt-2">Website: <a class="link" href="https://misanetc.vercel.app" target="_blank">misanetc.vercel.app </a></p>
+`,
     },
   ],
   volunteerWork: [
@@ -357,6 +412,7 @@ In my role as a Graduate Research Assistant in the RESHAPE Lab at Northern Arizo
         "Interviewed keynote speaker Denae Ford-Robinson and Jonan Richards at the conference, discussing their research on AI, community, and software engineering.",
       ],
     },
+
     {
       title: "Upsurge Global",
       role: " Learning Facilitator Volunteer",
@@ -367,6 +423,17 @@ In my role as a Graduate Research Assistant in the RESHAPE Lab at Northern Arizo
       desc: [
         "Create learning content on subjects such as social media and content marketing, artificial intelligence, and object-oriented programming for high school students.",
         "In charge of lecturing students on industry-relevant courses and skills; tech, writing, and marketing.",
+      ],
+    },
+    {
+      title: "Volunteer Contributor",
+      role: " ",
+      dates: "January 2020 - Present",
+      location: "",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      link: ["https://www.infosecurity-magazine.com/profile/misan-etchie/"],
+      desc: [
+        "I created highly informative tech publications on cybersecurity and software engineering for third-party websites, including Hackernoon, ReadWrite, Infosecurity Magazine, and more.",
       ],
     },
   ],

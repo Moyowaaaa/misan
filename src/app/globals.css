@@ -216,3 +216,7 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
   border-radius: 6px;
   background-color: skyblue;
 }
+
+.link {
+  color: skyblue;
+}

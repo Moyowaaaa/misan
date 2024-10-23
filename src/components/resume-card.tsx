@@ -36,6 +36,7 @@ export const ResumeCard = ({
   isExpanded,
   onClick,
 }: ResumeCardProps) => {
+  console.log(typeof description);
   return (
     <div className="block cursor-pointer" onClick={onClick}>
       <Card className="flex">
@@ -80,7 +81,7 @@ export const ResumeCard = ({
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
           </CardHeader>
-          {description && (
+          {description && typeof description === "string" ? (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
@@ -95,6 +96,28 @@ export const ResumeCard = ({
             >
               {description}
             </motion.div>
+          ) : (
+            <>
+              {Array.from(description as unknown as any)?.map(
+                (desc: any, index: number) => (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{
+                      opacity: isExpanded ? 1 : 0,
+                      height: isExpanded ? "auto" : 0,
+                    }}
+                    key={index}
+                    transition={{
+                      duration: 0.7,
+                      ease: [0.16, 1, 0.3, 1],
+                    }}
+                    className="mt-2 whitespace-break-spaces prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert leading-[1.5rem]"
+                  >
+                    -{desc}
+                  </motion.div>
+                )
+              )}
+            </>
           )}
         </div>
       </Card>
