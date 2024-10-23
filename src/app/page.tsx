@@ -158,7 +158,11 @@ export default function Page() {
                         tags={project.technologies}
                         image={project.image}
                         links={project.links}
-                        appLinks={project.appLinks as any}
+                        appLinks={
+                          project?.appLinks
+                            ? (project.appLinks as any)
+                            : undefined
+                        } // Check for appLinks
                       />
                     </div>
                   </BlurFade>
@@ -195,8 +199,10 @@ export default function Page() {
                       description={project?.desc as any}
                       location={project?.location}
                       dates={project.dates}
-                      image={project.image ? (project.image as any) : undefined} // Check for image existence
-                      link={project.link as any}
+                      image={
+                        project?.image ? (project.image as any) : undefined
+                      } // Check for image
+                      link={project?.link as any}
                     />
                   </BlurFade>
                 ))}

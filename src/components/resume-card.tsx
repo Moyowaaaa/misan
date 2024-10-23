@@ -16,7 +16,7 @@ interface ResumeCardProps {
   title: string;
   subtitle?: string;
   href?: string;
-  badges?: readonly string[];
+  badges?: any;
   period: string;
   description?: string;
   isExpanded: boolean;

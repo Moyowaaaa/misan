@@ -1,15 +1,5 @@
 import { Icons } from "@/components/icons";
-import {
-  HomeIcon,
-  NotebookIcon,
-  Paperclip,
-  ExternalLink,
-  AppleIcon,
-  Play,
-  PlaneIcon,
-  PlayCircle,
-  PlayCircleIcon,
-} from "lucide-react";
+import { HomeIcon, Paperclip } from "lucide-react";
 
 export const DATA = {
   name: "Misan Etchie",
