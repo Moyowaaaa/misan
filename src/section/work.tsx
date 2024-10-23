@@ -30,7 +30,7 @@ const WorkExperience = () => {
             badges={work.badges}
             period={`${work.start} - ${work.end ?? "Present"}`}
             description={work.description}
-            isExpanded={expandedId === id}
+            isExpanded={true}
             onClick={() => handleClick(id)}
           />
         </BlurFade>

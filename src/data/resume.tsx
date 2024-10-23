@@ -63,7 +63,7 @@ export const DATA = {
       },
       Resume: {
         name: "Resume",
-        url: "https://drive.google.com/file/d/10UupD_LUXkrcIuDrpYdgH6iJHw5QkBEq/view?usp=sharing",
+        url: "https://drive.google.com/file/d/1PC6Sg1j5tyIPNl_BpEZpxp2V86T3MBcH/view?usp=sharing",
         icon: Paperclip,
         navbar: true,
       },
@@ -254,6 +254,57 @@ In my role as a Graduate Research Assistant in the RESHAPE Lab at Northern Arizo
         "/raincheck3.png",
         "/raincheck4.png",
       ],
+      policy: `
+<h1 class="font-bold text-3xl">Raincheck Privacy Policy</h1>
+<p>Effective Date: 23rd of October, 2024</p>
+
+<li class="py-2 font-medium">1. Introduction</li>
+
+<p>Thank you for using Raincheck! Your privacy is important to us. This Privacy Policy explains how we handle your data when you use our app and services.</p>
+
+<p>By using Raincheck, you agree to this Privacy Policy. Please note that Raincheck does not collect, store, or share any personally identifiable information (PII) or location data.</p>
+
+<li class="py-2 font-medium">2. Information We Do Not Collect</li>
+
+<p>No Personal Information: Raincheck does not collect or store any personal data such as your name, email address, or phone number.</p>
+<p>No Location Data: Raincheck accesses your device's location services solely to provide real-time weather information based on your current location. This location data is not stored or shared in any form.</p>
+<p>No Usage Data: Raincheck does not track, collect, or store data about your usage patterns, device type, or interactions with the app.</p>
+
+<li class="py-2 font-medium">3. How We Use Your Information</li>
+
+<p>Raincheck uses real-time location data only to deliver accurate weather forecasts to your device while the app is in use. Once you close the app, any location data is no longer accessed, and no data is stored.</p>
+
+<li class="py-2 font-medium">4. Data Sharing and Disclosure</li>
+
+<p>Since Raincheck does not collect or store any data, there is no information to share or disclose to third parties.</p>
+
+<li class="py-2 font-medium">5. Data Retention</li>
+
+<p>No personal or location data is retained once the app is closed. Raincheck does not store any information on its servers.</p>
+
+<li class="py-2 font-medium">6. Data Security</li>
+
+<p>Raincheck does not collect or store your personal data. Any location data used to provide weather forecasts is handled locally on your device and is not transmitted to our servers or stored in any form.</p>
+
+<li class="py-2 font-medium">7. Your Choices and Rights</li>
+
+<p>Location Access: You can enable or disable location access for Raincheck through your device settings at any time. Without location access, Raincheck will not be able to provide weather forecasts based on your current location.</p>
+<p>Deleting the App: You can stop using Raincheck and any interaction with your location by uninstalling the app.</p>
+
+<li class="py-2 font-medium">8. Changes to This Privacy Policy</li>
+
+<p>We may update this Privacy Policy from time to time. If we make any changes, we will update the "Effective Date" at the top of this page. Your continued use of the app after any updates means you accept the revised policy.</p>
+
+<li class="py-2 font-medium">9. Contact Us</li>
+
+<p>If you have any questions about this Privacy Policy or how Raincheck operates, please feel free to contact us at:</p>
+
+<p>Email: msnetchie11@gmail.com</p>
+<p>Website: misanetc.vercel.app</p>
+<li class="py-2 font-medium">10. Children's Privacy</li>
+
+<p>Raincheck does not knowingly collect personal information from children under the age of 13. Since we do not collect any data, the app is safe for users of all ages.</p>
+<p>By using Raincheck, you acknowledge that you have read and understood this Privacy Policy.</p>`,
     },
     {
       title: "Roadmap",

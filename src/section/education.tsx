@@ -31,8 +31,9 @@ const EducationSection = () => {
             title={education.school}
             subtitle={education.degree}
             period={`${education.start} - ${education.end}`}
-            isExpanded={expandedId === id}
+            isExpanded={true}
             onClick={() => handleClick(id)}
+            description={education.desc}
           />
         </BlurFade>
       ))}
