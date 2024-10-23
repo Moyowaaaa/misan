@@ -20,11 +20,6 @@ interface Props {
   tags: any;
   link?: string;
   image?: string;
-  // links?: readonly {
-  //   icon: React.ReactNode;
-  //   type: string;
-  //   href: string;
-  // }[];
   links?: any;
   appLinks?: any;
   className?: string;

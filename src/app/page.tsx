@@ -75,7 +75,7 @@ export default function Page() {
               <h4 className="text-base font-bold">Technical</h4>
 
               <div className="flex flex-wrap gap-1">
-                {DATA?.TechnicalSkills?.map((skill, id) => (
+                {DATA?.TechnicalSkills?.map((skill: string, id: number) => (
                   <BlurFade
                     key={skill}
                     delay={BLUR_FADE_DELAY * 10 + id * 0.05}
@@ -87,7 +87,7 @@ export default function Page() {
               <h4 className="text-base font-bold">Research & Analysis</h4>
 
               <div className="flex flex-wrap gap-1">
-                {DATA?.Reasearch?.map((skill, id) => (
+                {DATA?.Reasearch?.map((skill: string, id: number) => (
                   <BlurFade
                     key={skill}
                     delay={BLUR_FADE_DELAY * 10 + id * 0.05}
@@ -99,7 +99,7 @@ export default function Page() {
               <h4 className="text-base font-bold">Soft</h4>
 
               <div className="flex flex-wrap gap-1">
-                {DATA?.SoftSkills?.map((skill, id) => (
+                {DATA?.SoftSkills?.map((skill: string, id: number) => (
                   <BlurFade
                     key={skill}
                     delay={BLUR_FADE_DELAY * 10 + id * 0.05}
@@ -137,7 +137,7 @@ export default function Page() {
               </div>
             </BlurFade>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-2 max-w-[800px] mx-auto ">
-              {DATA.projects.map((project, id) => (
+              {DATA.projects.map((project: any, id: number) => (
                 <React.Fragment key={project.title}>
                   <BlurFade delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
                     <div
@@ -189,7 +189,7 @@ export default function Page() {
             </BlurFade>
             <BlurFade delay={BLUR_FADE_DELAY * 14}>
               <ul className="mb-4 ml-4  ">
-                {DATA?.volunteerWork?.map((project, id) => (
+                {DATA?.volunteerWork?.map((project: any, id: number) => (
                   <BlurFade
                     key={project.title + project.dates}
                     delay={BLUR_FADE_DELAY * 15 + id * 0.05}
