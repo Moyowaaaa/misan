@@ -17,7 +17,7 @@ const WorkExperience = () => {
       <BlurFade delay={BLUR_FADE_DELAY * 5}>
         <h2 className="text-xl font-bold">Work Experience</h2>
       </BlurFade>
-      {DATA.work.map((work, id) => (
+      {DATA.work.map((work: any, id: number) => (
         <BlurFade key={work.company} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
           <ResumeCard
             key={work.company}

@@ -17,7 +17,7 @@ const EducationSection = () => {
       <BlurFade delay={BLUR_FADE_DELAY * 7}>
         <h2 className="text-xl font-bold">Education</h2>
       </BlurFade>
-      {DATA?.education?.map((education, id) => (
+      {DATA?.education?.map((education: any, id: number) => (
         <BlurFade
           key={education.school}
           delay={BLUR_FADE_DELAY * 8 + id * 0.05}
