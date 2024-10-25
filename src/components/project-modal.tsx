@@ -7,6 +7,7 @@ import Link from "next/link";
 import useOnClickOutside from "@/hooks/useOnClickOutside";
 import Markdown from "react-markdown";
 import { ChevronLeft } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const ProjectModal = ({
   openModal,
@@ -18,9 +19,19 @@ const ProjectModal = ({
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
   selectedProject: any;
 }) => {
+  const router = useRouter();
   const ref = useRef<HTMLDivElement | null>(null);
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState<boolean>(false);
   useOnClickOutside(ref, () => setOpenModal(false));
+
+  const handlePrivacyClick = (data: string) => {
+    const safeTitle = encodeURIComponent(
+      data.toLowerCase().replace(/\s+/g, "-")
+    );
+
+    // Push to the privacy policy page with the project title as a query parameter
+    router.push(`/privacy-policy?project=${safeTitle}`);
+  };
 
   return (
     <>
@@ -128,7 +139,7 @@ const ProjectModal = ({
                     <Badge
                       className="px-4 py-2 text-xs text-black dark:text-white cursor-pointer"
                       variant="secondary"
-                      onClick={() => setShowPrivacyPolicy(true)}
+                      onClick={() => handlePrivacyClick(selectedProject?.title)}
                     >
                       Privacy policy
                     </Badge>

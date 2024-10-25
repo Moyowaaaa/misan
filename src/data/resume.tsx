@@ -431,7 +431,7 @@ In my role as a Graduate Research Assistant in the RESHAPE Lab at Northern Arizo
       dates: "January 2020 - Present",
       location: "",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      link: ["https://muckrack.com/misan-etchie"],
+      link: ["https://muckrack.com/misan-etchie  "],
       desc: [
         "I created highly informative tech publications on cybersecurity and software engineering for third-party websites, including Hackernoon, ReadWrite, Infosecurity Magazine, and more.",
       ],

@@ -36,7 +36,6 @@ export const ResumeCard = ({
   isExpanded,
   onClick,
 }: ResumeCardProps) => {
-  console.log(typeof description);
   return (
     <div className="block cursor-pointer" onClick={onClick}>
       <Card className="flex">
