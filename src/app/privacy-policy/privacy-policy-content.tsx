@@ -8,13 +8,11 @@ const PrivacyPolicyContent = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  // Get the project parameter from URL
   const projectParam = searchParams.get("project");
 
   const currentPrivacyPolicy = useMemo(() => {
     if (!projectParam) return null;
 
-    // Decode the URL parameter and find matching project
     const decodedProjectName = decodeURIComponent(projectParam);
     return DATA.projects.find(
       (project: any) =>

@@ -13,8 +13,7 @@ const ProjectModal = ({
   openModal,
   setOpenModal,
   selectedProject,
-}: //   selectedProject
-{
+}: {
   openModal: boolean;
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
   selectedProject: any;
