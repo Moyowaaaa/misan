@@ -28,8 +28,6 @@ const ProjectModal = ({
     const safeTitle = encodeURIComponent(
       data.toLowerCase().replace(/\s+/g, "-")
     );
-
-    // Push to the privacy policy page with the project title as a query parameter
     router.push(`/privacy-policy?project=${safeTitle}`);
   };
 
@@ -64,90 +62,67 @@ const ProjectModal = ({
             </svg>
           </div>
 
-          {showPrivacyPolicy ? (
-            <div className="w-full min-h-[30rem]  flex flex-col my-2">
-              <div
-                className="flex gap-1 items-center cursor-pointer"
-                onClick={() => setShowPrivacyPolicy(false)}
-              >
-                <ChevronLeft />
+          <div className="h-[30rem] w-full flex gap-4 overflow-auto mt-4">
+            {Array.from(selectedProject?.images)?.map((image, index) => (
+              <img
+                // src={image}
+                src={image as any}
+                alt=""
+                key={index}
+                height={undefined}
+                width={undefined}
+                className="h-full object-contain w-full  "
+              />
+            ))}
+          </div>
+          <div className="space-y-4">
+            <h1 className="mt-1 text-3xl font-bold  dark:text-white text-black underline">
+              {selectedProject?.title}
+            </h1>
+            <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+              {selectedProject?.description}
+            </Markdown>
 
-                <p>Back</p>
-              </div>
-
-              <div
-                className="w-full"
-                dangerouslySetInnerHTML={{ __html: selectedProject?.policy }}
-              ></div>
+            <div className="mt-2 flex flex-wrap gap-1 ">
+              {selectedProject?.technologies?.map((tag: string) => (
+                <Badge
+                  className="px-1 py-0 text-[10px] text-black dark:text-white"
+                  variant="secondary"
+                  key={tag}
+                >
+                  {tag}
+                </Badge>
+              ))}
             </div>
-          ) : (
-            <>
-              <div className="h-[30rem] w-full flex gap-4 overflow-auto mt-4">
-                {Array.from(selectedProject?.images)?.map((image, index) => (
-                  <img
-                    // src={image}
-                    src={image as any}
-                    alt=""
-                    key={index}
-                    height={undefined}
-                    width={undefined}
-                    className="h-full object-contain w-full  "
-                  />
-                ))}
-              </div>
-              <div className="space-y-4">
-                <h1 className="mt-1 text-3xl font-bold  dark:text-white text-black underline">
-                  {selectedProject?.title}
-                </h1>
-                <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-                  {selectedProject?.description}
-                </Markdown>
 
-                <div className="mt-2 flex flex-wrap gap-1 ">
-                  {selectedProject?.technologies?.map((tag: string) => (
-                    <Badge
-                      className="px-1 py-0 text-[10px] text-black dark:text-white"
-                      variant="secondary"
-                      key={tag}
-                    >
-                      {tag}
-                    </Badge>
+            <div className="flex items-center justify-between">
+              {selectedProject?.links && selectedProject?.links.length > 0 && (
+                <div className="flex flex-row flex-wrap items-start gap-1">
+                  {selectedProject?.links?.map((link: any, idx: number) => (
+                    <Link href={link?.href} key={idx} target="_blank">
+                      <Badge
+                        key={idx}
+                        className="flex gap-2 px-2 py-1 text-[10px]"
+                      >
+                        {link.icon}
+                        {link.type}
+                      </Badge>
+                    </Link>
                   ))}
                 </div>
+              )}
 
-                <div className="flex items-center justify-between">
-                  {selectedProject?.links &&
-                    selectedProject?.links.length > 0 && (
-                      <div className="flex flex-row flex-wrap items-start gap-1">
-                        {selectedProject?.links?.map(
-                          (link: any, idx: number) => (
-                            <Link href={link?.href} key={idx} target="_blank">
-                              <Badge
-                                key={idx}
-                                className="flex gap-2 px-2 py-1 text-[10px]"
-                              >
-                                {link.icon}
-                                {link.type}
-                              </Badge>
-                            </Link>
-                          )
-                        )}
-                      </div>
-                    )}
-
-                  {selectedProject?.policy && (
-                    <Badge
-                      className="px-4 py-2 text-xs text-black dark:text-white cursor-pointer"
-                      variant="secondary"
-                      onClick={() => handlePrivacyClick(selectedProject?.title)}
-                    >
-                      Privacy policy
-                    </Badge>
-                  )}
-                </div>
-              </div>
-            </>
-          )}
+              {selectedProject?.policy && (
+                <Badge
+                  className="px-4 py-2 text-xs text-black dark:text-white cursor-pointer"
+                  variant="secondary"
+                  onClick={() => handlePrivacyClick(selectedProject?.title)}
+                >
+                  Privacy policy
+                </Badge>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </>
