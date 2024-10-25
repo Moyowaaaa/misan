@@ -1,45 +1,25 @@
-"use client";
-import { DATA } from "@/data/resume";
-import { ChevronLeft } from "lucide-react";
-import { useRouter, useSearchParams } from "next/navigation";
-import React, { useMemo } from "react";
+import { Suspense } from "react";
+import PrivacyPolicyContent from "./privacy-policy-content";
 
-const PrivacyPolicy = () => {
-  const router = useRouter();
-
-  const searchParams = useSearchParams();
-
-  const projectParam = searchParams.get("project");
-
-  const currentPrivacyPolicy = useMemo(() => {
-    if (!projectParam) return null;
-
-    const decodedProjectName = decodeURIComponent(projectParam);
-    return DATA.projects.find(
-      (project: any) =>
-        project.title.toLowerCase() === decodedProjectName.toLowerCase()
-    );
-  }, [projectParam]);
-
+export default function PrivacyPolicyPage() {
   return (
-    <>
-      <div className="w-full  flex flex-col gap-4">
-        <div
-          className="flex gap-1 items-center cursor-pointer"
-          onClick={() => router.back()}
-        >
-          <ChevronLeft />
-
-          <p>Back</p>
+    <Suspense
+      fallback={
+        <div className="w-full max-w-4xl mx-auto py-8 px-4">
+          <div className="flex gap-1 items-center mb-6">
+            <div className="h-6 w-6 bg-gray-200 rounded animate-pulse" />
+            <div className="h-4 w-16 bg-gray-200 rounded animate-pulse" />
+          </div>
+          <div className="space-y-4">
+            <div className="h-8 w-3/4 bg-gray-200 rounded animate-pulse" />
+            <div className="h-4 w-full bg-gray-200 rounded animate-pulse" />
+            <div className="h-4 w-full bg-gray-200 rounded animate-pulse" />
+            <div className="h-4 w-2/3 bg-gray-200 rounded animate-pulse" />
+          </div>
         </div>
-
-        <div
-          className="w-full"
-          dangerouslySetInnerHTML={{ __html: currentPrivacyPolicy?.policy }}
-        ></div>
-      </div>
-    </>
+      }
+    >
+      <PrivacyPolicyContent />
+    </Suspense>
   );
-};
-
-export default PrivacyPolicy;
+}
