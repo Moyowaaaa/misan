@@ -209,6 +209,10 @@ In my role as a Graduate Research Assistant in the RESHAPE Lab at Northern Arizo
           href: "https://github.com/MisanEtchie/TrailAbout",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "App store",
+          href: "https://apps.apple.com/us/app/trailabout/id6737364778",
+        },
       ],
 
       image: "/trailabout1.png",
